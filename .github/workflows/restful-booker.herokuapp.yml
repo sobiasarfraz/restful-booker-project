@@ -31,7 +31,7 @@ jobs:
           pytest --html=reports/project_report.html
 
       - name: Upload tests report outside VM
-        uses:  actions/upload-artifact@v3
+        uses:  actions/upload-artifact@v4
         with:
           name: upload report
           path: reports/project_report.html
