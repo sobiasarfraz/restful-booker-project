@@ -11,3 +11,7 @@ logs/
 
 # Test reports
 *.html
+
+# PyCharm
+.idea/
+*.iml
