@@ -10,6 +10,7 @@ venv/
 logs/
 
 # Test reports
+reports/
 *.html
 
 # PyCharm

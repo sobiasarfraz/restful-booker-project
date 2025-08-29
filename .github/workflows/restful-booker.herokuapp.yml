@@ -24,10 +24,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run tests
-        run: pytest -v
 
+      - name: Run tests and generate HTML reports
+        run: |
+          mkdir -p reports
+          pytest --html=reports/project_report.html
 
-
+      - name: Upload tests report outside VM
+        uses:  actions/upload-artifact@v3
+        with:
+          name: upload report
+          path: reports/project_report.html
 
 

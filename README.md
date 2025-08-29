@@ -41,7 +41,7 @@ The following negative scenarios are covered:
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/yourusername/restful-booker-project.git
+   git clone https://github.com/sobiasarfraz/restful-booker-project.git    
    cd restful-booker-project
    
 2. (Optional) Create and activate a virtual environment
@@ -57,7 +57,7 @@ The following negative scenarios are covered:
       python -m venv .venv
       .venv\Scripts\activate
 
-3.Install dependencies
+3. Install dependencies
 
        pip install -r requirements.txt
 
@@ -71,6 +71,9 @@ Simply run the tests from the project root:
 To run only one test file:
 
     pytest tests/test_api_flow.py
+To generate an HTML test report:
+    
+    pytest --html=reports/project_report.html
 
 
 You can also generate a log file in the /logs folder after running the tests.
@@ -87,16 +90,22 @@ You can also generate a log file in the /logs folder after running the tests.
 **Author**
 
 Sobia Sarfraz
+email:
 
-[Optional: add your email]
-
- GitHub Profile
+ GitHub Profile:  sobiasarfraz
 ---
+## Continuous Integration (CI) with github actions
+- All tests are run in virtual environment on every push or pull request to the `main` branch.
+- A detailed **html report** `project_report.html` is generated after every test run
+- The report is saved as a downloadable file under the **Actions** tab on GitHub.
+- The workflow file  is located at:
+ `.github/workflows/restful-booker.herokuapp.yml`
+
 📄 License
 
 This project is licensed for learning and demonstration purposes.
 
-### Reference page for Api endpoints ###
+### Reference page for API endpoints ###
    https://restful-booker.herokuapp.com/apidoc/index.html
    
   
