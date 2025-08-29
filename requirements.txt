@@ -1,0 +1,6 @@
+## All python packages required to test the Api for restful-booker.herokuapp.com
+
+
+pytest   # running test
+requests  # for api calls
+pytest-html  # for html test reports
